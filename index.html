@@ -17,7 +17,7 @@
       var push = await sw.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey:
-          "BI7LW2X89ktIdSZbdF22m0o-ZWjjeQjqCugSmsOvuHirkTOcmG_a4wNKub4uPa0hNR9ojn54BxN4gJqzTbHcKJI"
+          "<your-api-server>"
       });
       console.log(JSON.stringify(push));
       fetch("/subscription", {

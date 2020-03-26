@@ -5,11 +5,7 @@ var app = express();
 app.use(express.json());
 app.use(express.static("."));
 
-let vapidkey = {
-  publicKey:
-    "BI7LW2X89ktIdSZbdF22m0o-ZWjjeQjqCugSmsOvuHirkTOcmG_a4wNKub4uPa0hNR9ojn54BxN4gJqzTbHcKJI",
-  privateKey: "oDVn6QITDungWJis_BPh11ihiFrgfBghlG1W1ewDoog"
-};
+let vapidkey = {}; // generate by running $ node ./generate-vapid.js
 push.setVapidDetails(
   "mailto:hello@example.com",
   vapidkey.publicKey,

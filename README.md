@@ -7,6 +7,8 @@
 # How to run?
 
 ```
+npm install
+node ./generate-vapid.js # copy these keys to server.js and index.html
 node ./server.js
 ```
 
